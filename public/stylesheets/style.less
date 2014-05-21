@@ -1,0 +1,47 @@
+@white: #FFFFFF;
+@light-grey: #D1D3D4;
+@nice-blue: #7FBCD0;
+@light-blue: #5B83AD;
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.border-radius(@radius: 5px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.post-container, .tweet-container {
+  width: 500px;
+}
+
+.content {
+  padding: 5px;
+}
+
+.date {
+  background-color: @white;
+  padding: 5px;
+}
+
+.header {
+  background-color: @light-grey;
+  padding: 5px;
+}
+
+.post {
+  background-color: @light-blue;
+  padding: 10px;
+  margin: 10px;
+  .border-radius( 5px );
+}
+
+.tweet {
+  background-color: @light-blue;
+  padding: 10px;
+  margin: 10px;
+  .border-radius( 5px );
+}

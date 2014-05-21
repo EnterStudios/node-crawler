@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  div.post-container
+    each item in news
+      div.post
+        div.header= item.title
+        div.date= item.date
+        div.content= item.text
