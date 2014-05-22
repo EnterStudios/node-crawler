@@ -2,9 +2,11 @@ extends layout
 
 block content
   h1= title
-  div.post-container
+  div.container
     each item in news
-      div.post
-        div.header= item.title
-        div.date= item.date
-        div.content= item.text
+      div(class="panel panel-info")
+        div(class="panel-heading")
+          h3(class="panel-title")= item.title
+        div(class="panel-body")
+          p= item.date
+          p= item.text

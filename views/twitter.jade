@@ -2,6 +2,8 @@ extends layout
 
 block content
   h1= title
-  div.tweet-container
+  div.container
     each tweet in tweets
-      div.tweet= tweet
+      div(class="panel panel-info")
+        div(class="panel-body")
+          p= tweet
